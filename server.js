@@ -23,10 +23,13 @@ function handle_path(path) {
         case 'index':
             res = fs.readFileSync('index.html')
             break
+        case "style.css":
+            res = fs.readFileSync('style.css')
+            break
         case 'chat':
             res = handle_chat(spath[2])
             break
-
+        
         default:
             res = 'Page not found!'
             break

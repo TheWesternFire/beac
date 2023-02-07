@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(27, 27, 87);
+}
+
+.hello, .sender {
+    height: 50px;
+    margin: 0px;
+    width: max-content;
+    background-color:blueviolet;
+    color: lightskyblue;
+}
+
+.name {
+    margin: 0px;
+    font-size: x-large;
+}
+
+.chats {
+    height: calc(100% - 100px);
+    margin: 0px;
+    overflow-y: auto;
+    background-color: aqua;
+
+}
+
+.msg {
+    margin: 2px;
+    font-size: large;
+    color: deepskyblue;
+}
+
+.msg-name {
+    background-color: rgb(255, 0, 98);
+}
+.msg-ownname {
+    background-color: rgb(98, 0, 255);
+}
+
+
+#send-button {
+    height: 100%;
+    width: 100px;
+    margin: 0px;
+    color: aquamarine;
+}

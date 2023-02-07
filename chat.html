@@ -3,12 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <title>Chat, the Game</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
-    <body>
-        <p>
-            <h1>Hi there {{name}}!</h1>
-        </p>
+    <body  align="center">
+
+        <div id="hello">
+            <h2>Hi there <div id="name">{{name}}!</div></h2>
+            <h3>Let's start chatting</h3>
+        </div>
+
+        <div id="chats">
+        </div>
+
+        <div class="msg">
+            <br>
+            <span class="msg-name">asdasdasd</span>
+            <span class="msg-text">asdasd</span><br>
+            <span class="msg-ownname">asdasdasd</span>
+            <span class="msg-text">asdasd</span><br>
+        </div>
+        
+        <div id="sender">
+            <br>
+            <br>
+            <br>
+            <input type="text" id="send-msg" />
+            <button id="send_button" onclick="sendMsg()">Send</button>
+        </div>
     </body>
     <script>
+        function sendMsg() {
+            let tb = document.getElementById('send-msg')
+
+
+            tb.value = ''
+        }
+
+        function refreshMsgs(){
+
+        }
     </script>
 </html>
